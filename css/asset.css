@@ -1,0 +1,126 @@
+/* ===== Main ===== */
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+/* ===== Main - Images ===== */
+.images {
+  width: 30%;
+}
+
+#main-image {
+  align-items: center;
+  border: 1px solid black;
+  display: flex;
+  height: 500px;
+  justify-content: center;
+  width: 500px;
+}
+
+#main-image img {
+  width: 80%;
+}
+
+#sub-images {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#sub-images img {
+  border: 1px solid black;
+  display: inline-block;
+  margin: auto 10px;
+  width: 70px;
+}
+
+/* ===== Main - Information ===== */
+.information {
+  height: 500px;
+  width: 900px;
+}
+
+.name {
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 10px;
+  text-align: left;
+  width: 100%;
+}
+
+.name::after {
+  background-color: gray;
+  content: "";
+  display: block;
+  height: 3px;
+  width: 100%;
+}
+
+table {
+  font-size: 20px;
+  width: 100%;
+}
+
+th {
+  background-color: #dadada;
+  padding: 20px 0;
+  width: 30%;
+}
+
+td {
+  background-color: #f3f3f3;
+  padding-left: 50px;
+  text-align: left;
+  width: 70%;
+}
+
+/* ===== Buttons ===== */
+.buttons {
+  display: flex;
+}
+
+.buttons a {
+  background: #c4c4c4;
+  color: black;
+  margin: 0 50px;
+  padding: 20px 0;
+  position: relative;
+  width: 200px;
+}
+
+.buttons .delete::before {
+  background: url(../img/trash.png);
+  background-size: 100%;
+  content: "";
+  display: block;
+  height: 30px;
+  margin: 5px auto;
+  width: 30px;
+}
+
+.buttons .delete {
+  margin-right: auto;
+}
+
+.buttons .edit::before {
+  background: url(../img/pen.png);
+  background-size: 100%;
+  content: "";
+  display: block;
+  height: 30px;
+  margin: 5px auto;
+  width: 30px;
+}
+
+.buttons .code::before {
+  background: url(../img/code.png);
+  background-size: 100%;
+  content: "";
+  display: block;
+  height: 30px;
+  margin: 5px auto;
+  width: 60px;
+}
