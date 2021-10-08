@@ -33,20 +33,20 @@
                 <form action="">
                     <div class="images">
                         <div>
-                            <input type="file" name="example" accept="image/jpeg, image/png">
-                            <img src="../img/image.png" alt="">
+                            <input type="file" name="example" accept="image/jpeg, image/png" onchange="previewImage1(this);">
+                            <img src="../img/image.png" alt="" id="img1">
                         </div>
                         <div>
-                            <input type="file" name="example" accept="image/jpeg, image/png">
-                            <img src="../img/image.png" alt="">
+                            <input type="file" name="example" accept="image/jpeg, image/png" onchange="previewImage2(this);">
+                            <img src="../img/image.png" alt="" id="img2">
                         </div>
                         <div>
-                            <input type="file" name="example" accept="image/jpeg, image/png">
-                            <img src="../img/image.png" alt="">
+                            <input type="file" name="example" accept="image/jpeg, image/png" onchange="previewImage3(this);">
+                            <img src="../img/image.png" alt="" id="img3">
                         </div>
                         <div>
-                            <input type="file" name="example" accept="image/jpeg, image/png">
-                            <img src="../img/image.png" alt="">
+                            <input type="file" name="example" accept="image/jpeg, image/png" onchange="previewImage4(this);">
+                            <img src="../img/image.png" alt="" id="img4">
                         </div>
                     </div>
                     <div class="information">
@@ -90,6 +90,6 @@
             </div>
         </main>
         <script src="../js/common/jquery-3.5.1.min.js"></script>
-        <script src="../js/assets/script.js"></script>
+        <script src="../js/add/script.js"></script>
     </body>
 </html>
