@@ -30,22 +30,27 @@ header {
 
 nav {
   display: flex;
-  justify-content: space-between;
 }
 
 nav ul {
   align-items: center;
   column-gap: 3.5rem;
   display: flex;
-  margin-left: 50px ;
+  width: calc(100% - 150px);
 }
 
 nav li a {
   color: black;
+  margin-left: 50px;
+}
+
+nav li:last-child {
+  margin-left: auto;
 }
 
 .user-icon {
-  margin-right: 50px;
+  width: 50px;
+  margin: 0 50px;
 }
 
 .user-icon img {
