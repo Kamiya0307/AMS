@@ -14,13 +14,13 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="">ホームに戻る</a>
+                        <input type="button" value="ホームに戻る" id="homeButton">
                     </li>
                     <li>
-                        <a href="">ユーザー管理</a>
+                        <input type="button" value="ユーザー管理" id="userButton">
                     </li>
                     <li>
-                        <a href="add/">資産の追加</a>
+                        <input type="button" value="資産の追加" id="addAssetButton">
                     </li>
                 </ul>
                 <div class="user-icon">
@@ -33,214 +33,42 @@
                 <form action="">
                     <div class="form-content">
                         <label for="">資産名</label>
-                        <div class="form-input">
-                            <input type="text" name="name" id="" autocomplete="off">
-                            <button type="submit">+</button>
-                        </div>
+                        <input type="text" name="name" id="assetName" autocomplete="off">
                     </div>
                     <div class="form-content">
                         <label for="">資産コード</label>
-                        <div class="form-input">
-                            <input type="text" name="code" id="" autocomplete="off">
-                            <button type="submit">+</button>
-                        </div>
+                        <input type="text" name="code" id="assetCode" autocomplete="off">
                     </div>
                     <div class="form-content">
                         <label for="">場所</label>
-                        <div class="form-input">
-                            <input type="text" name="place" id="" autocomplete="off">
-                            <button type="submit">+</button>
-                        </div>
-                        <div class="tag">
-                            <p>404教室</p>
+                        <input type="text" name="place" id="locationSuggester" autocomplete="off">
+                        <div id="locationList"></div>
+                        <div class="tag-content">
+                            <input type="text" value="" id="location" class="tag" disabled>
                         </div>
                     </div>
                     <div class="form-content">
                         <label for="">管理者</label>
-                        <div class="form-input">
-                            <input type="text" name="admin" id="" autocomplete="off">
-                            <button type="submit">+</button>
-                        </div>
-                        <div class="tag">
-                            <p>宇都木</p>
+                        <input type="text" name="admin" id="" autocomplete="off">
+                        <div id="adminSelector"></div>
+                        <div class="tag-content">
+                            <input type="text" value="" id="admin" class="tag" disabled>
                         </div>
                     </div>
                     <div class="form-content">
                         <label for="">所有者</label>
-                        <div class="form-input">
-                            <input type="text" name="owner" id="" autocomplete="off">
-                            <button type="submit">+</button>
-                        </div>
-                        <div class="tag">
-                            <p>宇都木</p>
+                        <input type="text" name="owner" id="" autocomplete="off">
+                        <div id="ownerSelector"></div>
+                        <div class="tag-content">
+                            <input type="text" value="" id="owner" class="tag" disabled>
                         </div>
                     </div>
+                    <input type="submit" value="検索" id="searchButton">
                 </form>
             </div>
-            <div class="list">
-                <a href="assets/" class="item">
-                    <img src="img/iphone.png" alt="">
-                    <p class="name">iPhone6</p>
-                    <p class="code">code:AAAAA</p>
-                    <div>
-                        <p class="place">404教室</p>
-                        <p class="owner">宇都木</p>
-                    </div>
-                </a>
-                <a href="assets/" class="item">
-                    <img src="img/iphone.png" alt="">
-                    <p class="name">iPhone6</p>
-                    <p class="code">code:AAAAA</p>
-                    <div>
-                        <p class="place">404教室</p>
-                        <p class="owner">宇都木</p>
-                    </div>
-                </a>
-                <a href="assets/" class="item">
-                    <img src="img/iphone.png" alt="">
-                    <p class="name">iPhone6</p>
-                    <p class="code">code:AAAAA</p>
-                    <div>
-                        <p class="place">404教室</p>
-                        <p class="owner">宇都木</p>
-                    </div>
-                </a>
-                <a href="assets/" class="item">
-                    <img src="img/iphone.png" alt="">
-                    <p class="name">iPhone6</p>
-                    <p class="code">code:AAAAA</p>
-                    <div>
-                        <p class="place">404教室</p>
-                        <p class="owner">宇都木</p>
-                    </div>
-                </a>
-                <a href="assets/" class="item">
-                    <img src="img/iphone.png" alt="">
-                    <p class="name">iPhone6</p>
-                    <p class="code">code:AAAAA</p>
-                    <div>
-                        <p class="place">404教室</p>
-                        <p class="owner">宇都木</p>
-                    </div>
-                </a>
-                <a href="assets/" class="item">
-                    <img src="img/iphone.png" alt="">
-                    <p class="name">iPhone6</p>
-                    <p class="code">code:AAAAA</p>
-                    <div>
-                        <p class="place">404教室</p>
-                        <p class="owner">宇都木</p>
-                    </div>
-                </a>
-                <a href="assets/" class="item">
-                    <img src="img/iphone.png" alt="">
-                    <p class="name">iPhone6</p>
-                    <p class="code">code:AAAAA</p>
-                    <div>
-                        <p class="place">404教室</p>
-                        <p class="owner">宇都木</p>
-                    </div>
-                </a>
-                <a href="assets/" class="item">
-                    <img src="img/iphone.png" alt="">
-                    <p class="name">iPhone6</p>
-                    <p class="code">code:AAAAA</p>
-                    <div>
-                        <p class="place">404教室</p>
-                        <p class="owner">宇都木</p>
-                    </div>
-                </a>
-                <a href="assets/" class="item">
-                    <img src="img/iphone.png" alt="">
-                    <p class="name">iPhone6</p>
-                    <p class="code">code:AAAAA</p>
-                    <div>
-                        <p class="place">404教室</p>
-                        <p class="owner">宇都木</p>
-                    </div>
-                </a>
-                <a href="assets/" class="item">
-                    <img src="img/iphone.png" alt="">
-                    <p class="name">iPhone6</p>
-                    <p class="code">code:AAAAA</p>
-                    <div>
-                        <p class="place">404教室</p>
-                        <p class="owner">宇都木</p>
-                    </div>
-                </a>
-                <a href="assets/" class="item">
-                    <img src="img/iphone.png" alt="">
-                    <p class="name">iPhone6</p>
-                    <p class="code">code:AAAAA</p>
-                    <div>
-                        <p class="place">404教室</p>
-                        <p class="owner">宇都木</p>
-                    </div>
-                </a>
-                <a href="assets/" class="item">
-                    <img src="img/iphone.png" alt="">
-                    <p class="name">iPhone6</p>
-                    <p class="code">code:AAAAA</p>
-                    <div>
-                        <p class="place">404教室</p>
-                        <p class="owner">宇都木</p>
-                    </div>
-                </a>
-                <a href="assets/" class="item">
-                    <img src="img/iphone.png" alt="">
-                    <p class="name">iPhone6</p>
-                    <p class="code">code:AAAAA</p>
-                    <div>
-                        <p class="place">404教室</p>
-                        <p class="owner">宇都木</p>
-                    </div>
-                </a>
-                <a href="assets/" class="item">
-                    <img src="img/iphone.png" alt="">
-                    <p class="name">iPhone6</p>
-                    <p class="code">code:AAAAA</p>
-                    <div>
-                        <p class="place">404教室</p>
-                        <p class="owner">宇都木</p>
-                    </div>
-                </a>
-                <a href="assets/" class="item">
-                    <img src="img/iphone.png" alt="">
-                    <p class="name">iPhone6</p>
-                    <p class="code">code:AAAAA</p>
-                    <div>
-                        <p class="place">404教室</p>
-                        <p class="owner">宇都木</p>
-                    </div>
-                </a>
-                <a href="assets/" class="item">
-                    <img src="img/iphone.png" alt="">
-                    <p class="name">iPhone6</p>
-                    <p class="code">code:AAAAA</p>
-                    <div>
-                        <p class="place">404教室</p>
-                        <p class="owner">宇都木</p>
-                    </div>
-                </a>
-                <a href="assets/" class="item">
-                    <img src="img/iphone.png" alt="">
-                    <p class="name">iPhone6</p>
-                    <p class="code">code:AAAAA</p>
-                    <div>
-                        <p class="place">404教室</p>
-                        <p class="owner">宇都木</p>
-                    </div>
-                </a>
-                <a href="assets/" class="item">
-                    <img src="img/iphone.png" alt="">
-                    <p class="name">iPhone6</p>
-                    <p class="code">code:AAAAA</p>
-                    <div>
-                        <p class="place">404教室</p>
-                        <p class="owner">宇都木</p>
-                    </div>
-                </a>
+            <div class="assetList">
             </div>
         </main>
+        <script src="js/script.js"></script>
     </body>
 </html>

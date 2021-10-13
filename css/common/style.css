@@ -39,8 +39,9 @@ nav ul {
   width: calc(100% - 150px);
 }
 
-nav li a {
-  color: black;
+nav li input {
+  background: none;
+  border: none;
   margin-left: 50px;
 }
 
@@ -49,8 +50,8 @@ nav li:last-child {
 }
 
 .user-icon {
-  width: 50px;
   margin: 0 50px;
+  width: 50px;
 }
 
 .user-icon img {
