@@ -130,8 +130,46 @@ main {
   height: 17px;
   left: -17px;
   position: absolute;
-  top: 3px;
+  top: 0px;
   width: 17px;
 }
 
+@media screen and (max-width: 1024px) {
+  .search {
+    width: 30%;
+  }
 
+  .assetList {
+    grid-template-columns: repeat(4,1fr);
+    width: 70%;
+  }
+
+  .name {
+    font-size: 18px;
+  }
+  
+  .code {
+    font-size: 12px;
+  }
+
+  .item > div {
+    font-size: 12px;
+  }
+
+  .owner::before {
+    height: 12px;
+    left: -12px;
+    width: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .search {
+    width: 30%;
+  }
+
+  .assetList {
+    grid-template-columns: repeat(3,1fr);
+    width: 70%;
+  }
+}

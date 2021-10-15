@@ -32,6 +32,10 @@ nav {
   display: flex;
 }
 
+.sp {
+  display: none;
+}
+
 nav ul {
   align-items: center;
   column-gap: 3.5rem;
@@ -49,12 +53,58 @@ nav li:last-child {
   margin-left: auto;
 }
 
-.user-icon {
+nav .user-icon {
   margin: 0 50px;
   width: 50px;
 }
 
-.user-icon img {
+nav .user-icon img {
   border-radius: 50%;
   width: 50px;
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    padding: 0;
+    height: auto;
+  }
+
+  nav  {
+    width: auto;
+    padding-bottom: 30px;
+  }
+
+  .default {
+    display: none;
+  }
+
+  .sp {
+    display: unset;
+    width: 100%;
+  }
+
+  nav .sp .user-icon {
+    text-align: right;
+    width: 100%;
+    margin: 0;
+  }
+
+  nav .sp .user-icon img {
+    width: 30px;
+    margin: 10px 20px 10px 0;
+  }
+
+  nav ul {
+    column-gap: 3rem;
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    justify-content: space-between;
+    -webkit-overflow-scrolling: touch;
+    position: fixed;
+  }
+
+  nav li input {
+    margin-left: 20px;
+  }
 }
