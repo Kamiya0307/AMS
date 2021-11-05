@@ -1,3 +1,25 @@
+asset.css
+アクセスできるユーザー
+共有なし
+システム プロパティ
+種類
+スタイルシート
+サイズ
+4 KB
+使用容量
+4 KB
+パス
+css
+オーナー
+自分
+最終更新
+2021/10/29（自分）
+最終閲覧
+11:08（自分）
+作成日
+2021/10/29（Google Drive Web を使用）
+説明を追加
+閲覧者はダウンロード可
 /* ===== Main ===== */
 .container {
   display: flex;
@@ -27,6 +49,7 @@
   height: 100px;
   justify-content: center;
   margin-top: 10px;
+  align-items: center;
 }
 
 #sub-images img {
@@ -71,7 +94,7 @@
 
 table {
   font-size: 20px;
-  width: 100%;
+  width: 80%;
 }
 
 th {
@@ -133,4 +156,113 @@ td {
   height: 30px;
   margin: 5px auto;
   width: 60px;
+}
+
+@media screen and (max-width: 1024px) {
+    /* ===== Main ===== */
+  .container {
+    display: unset;
+    justify-content: unset;
+    margin: 0;
+  }
+
+  /* ===== Main - Images ===== */
+  .images {
+    width: 100%;
+  }
+
+  #main-image {
+    margin-top: 20px;
+    height: auto;
+    width: auto;
+  }
+
+  #main-image img {
+    width: 50%;
+  }
+
+  #sub-images {
+    height: 60px;
+    margin: 0;
+  }
+
+  #sub-images img {
+    height: 50px;
+    width: 50px;
+  }
+
+  /* ===== Main - Information ===== */
+  .information {
+    height: auto;
+    width: 100%;
+  }
+
+  .name {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  table {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 14px;
+  }
+
+  th {
+    width: 35%;
+  }
+
+  td {
+    width: 65%;
+  }
+
+  /* ===== Buttons ===== */
+  .buttons {
+    display: unset;
+    width: 100%;
+  }
+
+  .buttons a {
+    background: #c4c4c4;
+    color: black;
+    margin: 0 50px;
+    padding: 20px 0;
+    position: relative;
+    width: 100px;
+  }
+
+  .buttons .delete::before {
+    background: url(../img/trash.png);
+    background-size: 100%;
+    content: "";
+    display: block;
+    height: 30px;
+    margin: 5px auto;
+    width: 30px;
+  }
+
+  .buttons .delete {
+    margin-right: auto;
+  }
+
+  .buttons .edit::before {
+    background: url(../img/pen.png);
+    background-size: 100%;
+    content: "";
+    display: block;
+    height: 30px;
+    margin: 5px auto;
+    width: 30px;
+  }
+
+  .buttons .code::before {
+    background: url(../img/code.png);
+    background-size: 100%;
+    content: "";
+    display: block;
+    height: 30px;
+    margin: 5px auto;
+    width: 60px;
+  }
 }
