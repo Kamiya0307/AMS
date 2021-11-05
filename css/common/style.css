@@ -26,9 +26,11 @@ header {
   background: gray;
   height: 50px;
   padding: 10px 0;
+  position: fixed;
+  width: 100%;
 }
 
-nav {
+.default {
   display: flex;
 }
 
@@ -63,10 +65,14 @@ nav .user-icon img {
   width: 50px;
 }
 
+main {
+  padding-top: 80px;
+}
+
 @media screen and (max-width: 480px) {
   header {
     padding: 0;
-    height: auto;
+    height: 80px;
   }
 
   nav  {
@@ -102,6 +108,10 @@ nav .user-icon img {
     justify-content: space-between;
     -webkit-overflow-scrolling: touch;
     position: fixed;
+  }
+
+  nav li:last-child {
+    padding-right: 20px;
   }
 
   nav li input {
