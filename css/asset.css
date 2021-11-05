@@ -83,7 +83,7 @@ th {
 
 td {
   background-color: #f3f3f3;
-  padding-left: 50px;
+  padding: 0 50px;
   text-align: left;
   width: 70%;
 }
