@@ -2,7 +2,7 @@
 .add form {
   align-items: flex-start;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   margin-top: 50px;
   padding: 20px;
 }
@@ -27,6 +27,7 @@
 .add form input[type=submit] {
   height: 44px;
   width: 300px;
+  margin-left: 20px;
 }
 
 /* ===== Main - List ===== */
