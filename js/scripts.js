@@ -1,5 +1,6 @@
 $(".logout").modaal(
     {
-        custom_class: 'logout'
+        custom_class: 'logout',
+        overlay_opacity: 0
     }
 );
