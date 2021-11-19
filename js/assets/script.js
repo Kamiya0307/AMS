@@ -15,4 +15,8 @@ $(function(){
 });
 
 	
-$(".inline").modaal();
+$(".delete").modaal(
+    {
+        custom_class: 'delete'
+    }
+);
