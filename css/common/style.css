@@ -53,7 +53,63 @@ nav li:last-child {
   margin: 0 50px;
 }
 
+.user-icon a {
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+
 .user-icon img {
   border-radius: 50%;
   width: 50px;
+}
+
+/* ===== Moodal ===== */
+h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.modaal-inner-wrapper {
+  text-align: right;
+  display: block;
+}
+
+.modaal-container {
+  width: 200px;
+}
+
+.modaal-content-container div {
+  font-size: 20px;
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+}
+
+.modaal-content-container div p {
+  margin-bottom: 50px;
+}
+
+
+.modaal-content-container div span {
+  color: #ff4040;
+}
+
+.modaal-content-container div input,
+.modaal-content-container div button {
+  margin-top: 10px;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.modaal-close {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+}
+
+.modaal-close::before,
+.modaal-close::after {
+  background: black;
 }
