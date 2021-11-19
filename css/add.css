@@ -89,6 +89,7 @@ td {
 /* ===== Buttons ===== */
 .buttons {
   display: flex;
+  justify-content: flex-end;
 }
 
 .buttons a {
@@ -98,38 +99,4 @@ td {
   padding: 20px 0;
   position: relative;
   width: 200px;
-}
-
-.buttons .delete::before {
-  background: url(../img/trash.png);
-  background-size: 100%;
-  content: "";
-  display: block;
-  height: 30px;
-  margin: 5px auto;
-  width: 30px;
-}
-
-.buttons .delete {
-  margin-right: auto;
-}
-
-.buttons .edit::before {
-  background: url(../img/pen.png);
-  background-size: 100%;
-  content: "";
-  display: block;
-  height: 30px;
-  margin: 5px auto;
-  width: 30px;
-}
-
-.buttons .code::before {
-  background: url(../img/code.png);
-  background-size: 100%;
-  content: "";
-  display: block;
-  height: 30px;
-  margin: 5px auto;
-  width: 60px;
 }
