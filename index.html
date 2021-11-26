@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AMS</title>
+        <link rel="stylesheet" href="css/common/reset.css">
+        <link rel="stylesheet" href="css/common/modaal.css">
+        <link rel="stylesheet" href="css/common/style.css">
+        <link rel="stylesheet" href="css/list.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="default">
+                    <ul>
+                        <li>
+                            <a href="">ホームに戻る</a>
+                        </li>
+                        <li>
+                            <a href="user/">ユーザー管理</a>
+                        </li>
+                        <li>
+                            <a href="place/">場所管理</a>
+                        </li>
+                        <li>
+                            <a href="add/">資産の追加</a>
+                        </li>
+                    </ul>
+                    <div class="user-icon">
+                        <a href="#logout" class="logout">
+                            <img src="img/user.png" alt="">
+                        </a>
+                        <div id="logout" style="display:none;">
+                            <h2>ログアウト</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="sp">
+                    <ul class="top-menu">
+                        <li>
+                            <a href="user/">ユーザー管理</a>
+                        </li>
+                        <li>
+                            <a href="place/">場所管理</a>
+                        </li>
+                        <li>
+                            <div class="user-icon">
+                                <a href="#logout" class="logout">
+                                    <img src="img/user.png" alt="">
+                                </a>
+                                <div id="logout" style="display:none;">
+                                    <h2>ログアウト</h2>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="bottom-menu">
+                        <li>
+                            <a href=""><img src="/img/home.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="add/">
+                                <img src="/img/plus.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="/img/search.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="search">
+                <form action="">
+                    <div class="form-content">
+                        <label for="">資産名</label>
+                        <div class="form-input">
+                            <input type="text" name="name" id="" autocomplete="off">
+                            <button type="submit">+</button>
+                        </div>
+                    </div>
+                    <div class="form-content">
+                        <label for="">資産コード</label>
+                        <div class="form-input">
+                            <input type="text" name="code" id="" autocomplete="off">
+                            <button type="submit">+</button>
+                        </div>
+                    </div>
+                    <div class="form-content">
+                        <label for="">場所</label>
+                        <div class="form-input">
+                            <input type="text" name="place" id="" autocomplete="off">
+                            <button type="submit">+</button>
+                        </div>
+                        <div class="tag">
+                            <p>404教室</p>
+                        </div>
+                    </div>
+                    <div class="form-content">
+                        <label for="">管理者</label>
+                        <div class="form-input">
+                            <input type="text" name="admin" id="" autocomplete="off">
+                            <button type="submit">+</button>
+                        </div>
+                        <div class="tag">
+                            <p>宇都木</p>
+                        </div>
+                    </div>
+                    <div class="form-content">
+                        <label for="">所有者</label>
+                        <div class="form-input">
+                            <input type="text" name="owner" id="" autocomplete="off">
+                            <button type="submit">+</button>
+                        </div>
+                        <div class="tag">
+                            <p>宇都木</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="list">
+                <a href="assets/" class="item">
+                    <img src="img/iphone.png" alt="">
+                    <p class="name">iPhone6</p>
+                    <p class="code">code:AAAAA</p>
+                    <div>
+                        <p class="place">404教室</p>
+                        <p class="owner">宇都木</p>
+                    </div>
+                </a>
+                <!-- <a href="assets/" class="item">
+                    <img src="img/iphone.png" alt="">
+                    <p class="name">iPhone6</p>
+                    <p class="code">code:AAAAA</p>
+                    <div>
+                        <p class="place">404教室</p>
+                        <p class="owner">宇都木</p>
+                    </div>
+                </a>
+                <a href="assets/" class="item">
+                    <img src="img/iphone.png" alt="">
+                    <p class="name">iPhone6</p>
+                    <p class="code">code:AAAAA</p>
+                    <div>
+                        <p class="place">404教室</p>
+                        <p class="owner">宇都木</p>
+                    </div>
+                </a>
+                <a href="assets/" class="item">
+                    <img src="img/iphone.png" alt="">
+                    <p class="name">iPhone6</p>
+                    <p class="code">code:AAAAA</p>
+                    <div>
+                        <p class="place">404教室</p>
+                        <p class="owner">宇都木</p>
+                    </div>
+                </a>
+                <a href="assets/" class="item">
+                    <img src="img/iphone.png" alt="">
+                    <p class="name">iPhone6</p>
+                    <p class="code">code:AAAAA</p>
+                    <div>
+                        <p class="place">404教室</p>
+                        <p class="owner">宇都木</p>
+                    </div>
+                </a>
+                <a href="assets/" class="item">
+                    <img src="img/iphone.png" alt="">
+                    <p class="name">iPhone6</p>
+                    <p class="code">code:AAAAA</p>
+                    <div>
+                        <p class="place">404教室</p>
+                        <p class="owner">宇都木</p>
+                    </div>
+                </a>
+                <a href="assets/" class="item">
+                    <img src="img/iphone.png" alt="">
+                    <p class="name">iPhone6</p>
+                    <p class="code">code:AAAAA</p>
+                    <div>
+                        <p class="place">404教室</p>
+                        <p class="owner">宇都木</p>
+                    </div>
+                </a>
+                <a href="assets/" class="item">
+                    <img src="img/iphone.png" alt="">
+                    <p class="name">iPhone6</p>
+                    <p class="code">code:AAAAA</p>
+                    <div>
+                        <p class="place">404教室</p>
+                        <p class="owner">宇都木</p>
+                    </div>
+                </a>
+                <a href="assets/" class="item">
+                    <img src="img/iphone.png" alt="">
+                    <p class="name">iPhone6</p>
+                    <p class="code">code:AAAAA</p>
+                    <div>
+                        <p class="place">404教室</p>
+                        <p class="owner">宇都木</p>
+                    </div>
+                </a>
+                <a href="assets/" class="item">
+                    <img src="img/iphone.png" alt="">
+                    <p class="name">iPhone6</p>
+                    <p class="code">code:AAAAA</p>
+                    <div>
+                        <p class="place">404教室</p>
+                        <p class="owner">宇都木</p>
+                    </div>
+                </a>
+                <a href="assets/" class="item">
+                    <img src="img/iphone.png" alt="">
+                    <p class="name">iPhone6</p>
+                    <p class="code">code:AAAAA</p>
+                    <div>
+                        <p class="place">404教室</p>
+                        <p class="owner">宇都木</p>
+                    </div>
+                </a>
+                <a href="assets/" class="item">
+                    <img src="img/iphone.png" alt="">
+                    <p class="name">iPhone6</p>
+                    <p class="code">code:AAAAA</p>
+                    <div>
+                        <p class="place">404教室</p>
+                        <p class="owner">宇都木</p>
+                    </div>
+                </a>
+                <a href="assets/" class="item">
+                    <img src="img/iphone.png" alt="">
+                    <p class="name">iPhone6</p>
+                    <p class="code">code:AAAAA</p>
+                    <div>
+                        <p class="place">404教室</p>
+                        <p class="owner">宇都木</p>
+                    </div>
+                </a>
+                <a href="assets/" class="item">
+                    <img src="img/iphone.png" alt="">
+                    <p class="name">iPhone6</p>
+                    <p class="code">code:AAAAA</p>
+                    <div>
+                        <p class="place">404教室</p>
+                        <p class="owner">宇都木</p>
+                    </div>
+                </a>
+                <a href="assets/" class="item">
+                    <img src="img/iphone.png" alt="">
+                    <p class="name">iPhone6</p>
+                    <p class="code">code:AAAAA</p>
+                    <div>
+                        <p class="place">404教室</p>
+                        <p class="owner">宇都木</p>
+                    </div>
+                </a>
+                <a href="assets/" class="item">
+                    <img src="img/iphone.png" alt="">
+                    <p class="name">iPhone6</p>
+                    <p class="code">code:AAAAA</p>
+                    <div>
+                        <p class="place">404教室</p>
+                        <p class="owner">宇都木</p>
+                    </div>
+                </a>
+                <a href="assets/" class="item">
+                    <img src="img/iphone.png" alt="">
+                    <p class="name">iPhone6</p>
+                    <p class="code">code:AAAAA</p>
+                    <div>
+                        <p class="place">404教室</p>
+                        <p class="owner">宇都木</p>
+                    </div>
+                </a>
+                <a href="assets/" class="item">
+                    <img src="img/iphone.png" alt="">
+                    <p class="name">iPhone6</p>
+                    <p class="code">code:AAAAA</p>
+                    <div>
+                        <p class="place">404教室</p>
+                        <p class="owner">宇都木</p>
+                    </div>
+                </a> -->
+            </div>
+        </main>
+        <script src="js/common/jquery-3.5.1.min.js"></script>
+        <script src="js/common/modaal.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
