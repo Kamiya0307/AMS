@@ -76,7 +76,6 @@ main {
 
 .name {
   font-size: 22px;
-  font-weight: bold;
 }
 
 .code {
@@ -84,8 +83,17 @@ main {
 }
 
 .item > div {
-  display: flex;
+  display: inline-flex;
+  flex-flow: column;
   justify-content: space-around;
+  text-align: center;
+}
+
+.place {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
 }
 
 .owner {
@@ -100,7 +108,7 @@ main {
   height: 17px;
   left: -17px;
   position: absolute;
-  top: 3px;
+  top: 0;
   width: 17px;
 }
 
@@ -117,19 +125,51 @@ main {
 
   .item {
     display: grid;
-    border: 1px solid gray;
+    width: 100%;
     height: 80px;
+    border: 1px solid gray;
+    grid-template-columns: 70px 1fr 1fr;
+    grid-template-rows: 50px 30px;
   }
 
   .item img {
     max-height: 70px;
+    max-width: 70px;
+    grid-column: 1;
+    grid-row: 1 / 3;
   }
 
   .name {
-    display: inline-block;
+    font-size: 30px;
+    grid-column: 2;
+    grid-row: 1;
+    height: 50px;
+    line-height: 70px;
   }
 
   .code {
-    display: inline-block;
+    grid-column: 2;
+    grid-row: 2;
+    height: 30px;
+    line-height: 15px;
+  }
+
+  .item > div {
+    grid-column: 3;
+    grid-row: 1 / 3;
+    width: 1fr;
+    overflow: hidden;
+  }
+
+  .item > div .place{
+    font-size: 22px;
+    grid-column: 3;
+    height: 50px;
+    line-height: 70px;
+  }
+  
+  .item > div .owner{
+    height: 30px;
+    line-height: 15px;
   }
 }
