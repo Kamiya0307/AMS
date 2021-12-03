@@ -3,3 +3,5 @@
 ・トラック、横を17px 1fr → ユーザーアイコン表示
 
 ・文字が多い場合 → 省略(...)
+
+core2duo/page/sample/asset_list/index.html
