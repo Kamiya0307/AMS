@@ -62,7 +62,7 @@ nav li:last-child {
   width: 50px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   /* ===== Reset ===== */
   nav .bottom-menu li a{
     margin: 0;
