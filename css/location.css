@@ -1,0 +1,23 @@
+/* ===== Main ===== */
+main {
+    text-align: center;
+}
+
+.add-container {
+    display: flex;
+}
+
+.add-item {
+    display: inline;
+    width: auto;
+}
+
+#name-input {
+    padding: 5px 0px;
+    width: 200px;
+}
+
+
+#add-button {
+    padding: 5px 10px;
+}
