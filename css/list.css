@@ -111,7 +111,7 @@ main {
     grid-template-columns: 70px 1fr 30px 1fr;
     grid-template-rows: 15px 35px 20px;
     place-items: center;
-    max-width: 100%;
+    max-width: 100vw;
   }
 
   .item img {
