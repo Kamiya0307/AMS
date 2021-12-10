@@ -5,7 +5,7 @@ https://kamiya0307.github.io/AMS/
 
 【対応ページ】
 
-・リストページ [ index.html ]
+・リストページ [/index.html]
 
 ・場所ページ(データのスタイル未設定)
 
