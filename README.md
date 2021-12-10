@@ -9,4 +9,4 @@ https://kamiya0307.github.io/AMS/
 
 ・場所ページ(データのスタイル未設定)
 
-/location/index.html
+[/location/index.html]
