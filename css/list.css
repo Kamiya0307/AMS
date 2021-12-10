@@ -62,7 +62,7 @@ main {
   grid-row: 4;
   display: inline-flex;
   justify-content: space-around;
-  text-align: left;
+  text-align: center;
   width: 250px;
 }
 
@@ -72,13 +72,11 @@ main {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 60%;
 }
 
 .owner {
   font-size: 20px;
   position: relative;
-  width: 40%;
 }
 
 .owner::before {
@@ -108,10 +106,10 @@ main {
     border: 2px solid #E0E0E0;
     display: grid;
     text-align: center;
-    grid-template-columns: 70px 1fr 30px 1fr;
+    grid-template-columns: 70px 1fr 10px 1fr;
     grid-template-rows: 15px 35px 20px;
     place-items: center;
-    max-width: 100vw;
+    max-width: 100%;
   }
 
   .item img {
@@ -137,6 +135,7 @@ main {
     grid-column: 4;
     grid-row: 2 / 4;
     text-align: left;
+    width: calc((100vw - 70px) / 2.5);
   }
   
   .place{
