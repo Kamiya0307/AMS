@@ -72,13 +72,13 @@ main {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 50%;
+  width: 60%;
 }
 
 .owner {
   font-size: 20px;
   position: relative;
-  width: 50%;
+  width: 40%;
 }
 
 .owner::before {
