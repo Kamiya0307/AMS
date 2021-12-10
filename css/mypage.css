@@ -1,0 +1,37 @@
+/* ===== Main ===== */
+main {
+  text-align: center;
+}
+
+.item {
+  display: inline;
+  width: auto;
+}
+
+#name-input,
+#address-input {
+  padding: 5px 0px;
+  width: 200px;
+}
+
+#button {
+  padding: 5px 10px;
+}
+
+@media screen and (max-width: 600px) {
+  #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item {
+    display: block;
+  }
+
+  #button {
+    margin-left: 81.75px;
+    width: 204px;
+    padding: 5px 0px;
+  }
+}
