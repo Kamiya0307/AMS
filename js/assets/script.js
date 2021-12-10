@@ -1,22 +1,16 @@
-$(function(){
-    $('#sub-images img').on('click',function(){
-        //mainに切り替えるimgのsrc取得
-        img = $(this).attr('src');
-        //currentクラス付け替え
-        $('#sub-images li').removeClass('current');
-        $(this).parent().addClass('current');
-        //fadeOutできたらsrc変更してfadeIn
-        $('#main-image img').fadeOut(50, function() {
-            $('#main-image img').attr('src', img).on('load', function() {
-                 $(this).fadeIn();
-            })
-       })
-    });
-});
+var mainImg = document.getElementById("main-image").getElementsByTagName("img")[0];
 
-	
-$(".delete").modaal(
-    {
-        custom_class: 'delete'
+var subImg = document.getElementById("sub-images").getElementsByTagName("img");
+var subList = document.getElementById("sub-images").getElementsByTagName("li");
+
+function changeImg(e){
+    for(var i = 0;i < subList.length;i++){
+        subList[i].classList.remove('current');
     }
-);
+    mainImg.src = subImg[this.index].src;
+    subList[this.index].classList.add("current");
+};
+
+for(var i = 0;i < subImg.length;i++){
+    subImg[i].addEventListener("click",{index:i, handleEvent: changeImg});
+}
