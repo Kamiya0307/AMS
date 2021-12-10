@@ -8,4 +8,5 @@ https://kamiya0307.github.io/AMS/
 ・リストページ [ index.html ]
 
 ・場所ページ(データのスタイル未設定)
+
 [/location/index.html]
