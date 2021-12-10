@@ -108,7 +108,7 @@ main {
     border: 2px solid #E0E0E0;
     display: grid;
     text-align: center;
-    grid-template-columns: 70px 1fr 10px 1fr;
+    grid-template-columns: 70px 1fr 30px 1fr;
     grid-template-rows: 15px 35px 20px;
     place-items: center;
     max-width: 100%;
@@ -137,7 +137,6 @@ main {
     grid-column: 4;
     grid-row: 2 / 4;
     text-align: left;
-    width: calc((100vw - 70px) / 2.5);
   }
   
   .place{
