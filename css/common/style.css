@@ -64,11 +64,11 @@ nav li:last-child {
 
 @media screen and (max-width: 768px) {
   /* ===== Reset ===== */
-  nav .bottom-menu li a{
+  nav .bottom-menu li a {
     margin: 0;
   }
 
-  nav .bottom-menu li:last-child{
+  nav .bottom-menu li:last-child {
     margin: 0;
   }
 
@@ -76,7 +76,7 @@ nav li:last-child {
     padding: 0;
   }
 
-  nav  {
+  nav {
     width: auto;
     padding-bottom: 0px;
   }
@@ -99,7 +99,7 @@ nav li:last-child {
     white-space: nowrap;
     justify-content: space-between;
     -webkit-overflow-scrolling: touch;
-    position: fixed;
+    position: absolute;
     align-items: center;
   }
 
@@ -122,15 +122,15 @@ nav li:last-child {
     margin: 10px 20px 10px 0;
   }
 
-
   nav .sp .bottom-menu {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     height: 50px;
-    background: #E5E5E5;
+    background: #e5e5e5;
     display: flex;
     justify-content: space-evenly;
+    z-index: 100;
   }
 
   nav .sp .bottom-menu li {
