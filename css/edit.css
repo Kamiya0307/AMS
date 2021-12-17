@@ -154,7 +154,9 @@ td input {
   .name {
     font-size: 30px;
     height: auto;
-    margin: 0;
+  }
+
+  .name input {
     text-align: center;
   }
 
