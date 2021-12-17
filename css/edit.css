@@ -111,7 +111,7 @@ td input {
   justify-content: flex-end;
 }
 
-#ConfirmButton {
+.buttons input {
   background: #c4c4c4;
   color: black;
   margin: 0 50px;
