@@ -2,14 +2,18 @@
 main {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
 }
 
 /* ===== Main - search-container ===== */
 #search-container {
-  width: 20%;
-  border: 1px solid gray;
+  position: sticky;
+  width: calc(20% - 20px);
+  max-width: calc(20% - 20px);
+  top: 0;
   margin: 20px;
   padding: 20px;
+  border: 1px solid gray;
 }
 
 #search-container .search-item {
@@ -20,136 +24,224 @@ main {
 
 #search-container button {
   width: 50px;
-  padding: 7px 5px;
   width: calc(100%);
+  padding: 7px 5px;
 }
 
 /* ===== Main - list-container ===== */
 #list-container {
   display: grid;
+  width: calc(100vw - 20% - 20px);
+  max-width: calc(100vw - 20% - 20px);
+
   grid-template-columns: repeat(auto-fill, 250px);
-  width: 90%;
 }
 
 .item {
   display: grid;
-  text-align: center;
-  grid-template-columns: 1fr;
-  grid-template-rows: 150px 35px 20px 27px;
-  place-items: center;
   max-width: 250px;
+  text-align: center;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px 35px 20px 45px 45px;
+  place-items: center;
 }
 
 .item img {
   max-width: 150px;
   max-height: 150px;
+
   grid-row: 1;
 }
 
 .name {
   color: black;
   font-size: 30px;
+
   grid-row: 2;
 }
 
 .code {
   color: #616161;
+
   grid-row: 3;
 }
 
 .item > div {
-  color: #616161;
-  grid-row: 4;
-  display: inline-flex;
-  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
   text-align: center;
+
+  grid-row: 4 / 5;
+}
+
+.item > div > div {
+  display: flex;
   width: 250px;
+  justify-content: space-evenly;
+  color: #616161;
 }
 
 .place {
   color: #616161;
+  text-align: center;
   font-size: 20px;
-  overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
-  max-width: 60%;
+  overflow: hidden;
+
+  text-overflow: ellipsis;
 }
 
 .owner {
-  font-size: 20px;
   position: relative;
-  white-space: nowrap;
   max-width: 40%;
+  font-size: 18px;
+  white-space: nowrap;
+  margin-right: 25px;
 }
 
 .owner::before {
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 0;
+  left: -18px;
   background: url(../img/owner.png);
   background-size: 100%;
   content: "";
-  display: block;
-  height: 17px;
-  left: -17px;
-  position: absolute;
-  top: 0;
-  width: 17px;
 }
 
-@media screen and (max-width: 480px) {
+.admin {
+  position: relative;
+  max-width: 40%;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.admin::before {
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  left: -15px;
+  background: url(../img/admin.png);
+  background-size: 100%;
+  content: "";
+}
+
+/* ===== Main - Page Button ===== */
+.page-button {
+  position: static;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.page.button {
+  padding: 10px 50px;
+}
+
+@media screen and (max-width: 1024px) {
+  #search-container {
+    margin: 20px 10px;
+  }
+
+  #list-container {
+    grid-template-columns: repeat(3, 250px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #search-container {
+    margin: 20px 10px;
+  }
+
+  #list-container {
+    grid-template-columns: repeat(auto-fill, 250px);
+  }
+
+  /* ===== Main - Page Button ===== */
+  .page-button {
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
   #search-container {
     display: none;
   }
 
   #list-container {
     width: 100%;
-    grid-template-columns: 1fr;
+    max-width: 100%;
+
     grid-gap: 1px;
+    grid-template-columns: 1fr;
   }
 
   .item {
-    border: 2px solid #E0E0E0;
-    display: grid;
-    text-align: center;
-    grid-template-columns: 70px 1fr 10px 1fr;
-    grid-template-rows: 15px 35px 20px;
-    place-items: center;
+    width: 100%;
     max-width: 100%;
+    text-align: center;
+    border: 2px solid #e0e0e0;
+
+    grid-template-columns: 70px 1fr 10px 1.5fr;
+    grid-template-rows: 40px 35px;
+    place-items: center;
   }
 
   .item img {
-    max-height: 70px;
     max-width: 70px;
+    max-height: 70px;
+
     grid-column: 1;
-    grid-row: 1 / 4;
+    grid-row: 1 / 3;
   }
 
   .name {
     font-size: 30px;
+
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 1;
   }
 
   .code {
     grid-column: 2;
-    grid-row: 3;
+    grid-row: 2;
   }
 
   .item > div {
-    flex-flow: column;
-    grid-column: 4;
-    grid-row: 2 / 4;
-    text-align: left;
     width: calc((100vw - 70px) / 2.5);
+    height: 100%;
+    flex-flow: column;
+    text-align: left;
+
+    grid-column: 4;
+    grid-row: 1 / 3;
   }
-  
-  .place{
-    font-size: 18px;
-    overflow: hidden;
-    grid-row: 3;
+
+  .item > div > div {
+    width: auto;
+    height: 50%;
+    height: 35px;
+
+    grid-row: 2;
+  }
+
+  .place {
     max-width: unset;
-  }
-  
-  .owner{
+    height: 40px;
+    align-items: center;
     font-size: 18px;
-    grid-row: 4;
+    line-height: 40px;
+    overflow: hidden;
+
+    grid-row: 1;
+  }
+
+  /* ===== Main - Page Button ===== */
+  .page-button {
+    margin-top: 10px;
   }
 }
