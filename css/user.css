@@ -7,7 +7,6 @@ form.container {
   display: flex;
   justify-content: center;
   margin: 20px 0;
-  width: 100%;
 }
 
 .form-content {
@@ -21,6 +20,8 @@ form.container {
   display: block;
   width: 120px;
   margin: 0;
+  text-align: right;
+  margin-right: 5px;
 }
 
 form.container input {
@@ -31,6 +32,7 @@ form.container input {
 #AddButton {
   padding: 5px 10px;
   margin-left: 30px;
+  margin-right: auto;
   width: 154px;
 }
 
@@ -58,10 +60,11 @@ form.container input {
   padding: 5px 15px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   form.container {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   form.container input {
@@ -70,7 +73,7 @@ form.container input {
   }
 
   #AddButton {
-    margin-left: calc((100vw + 274px) / 2 - 154px);
+    margin-left: calc((100vw + 274px) / 2 - 154px + 3px);
   }
 
   /* ===== Main - List ===== */
